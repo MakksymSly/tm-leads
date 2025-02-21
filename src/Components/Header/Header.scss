@@ -1,6 +1,20 @@
-.ga {
-  color:green;
-  background-color: red;
-  width: 100px;
-  height: 100px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  &__nav {
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+    gap: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
 }

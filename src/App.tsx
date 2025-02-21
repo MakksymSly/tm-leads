@@ -1,16 +1,15 @@
-import './App.scss'
-import { Header } from './Components/Header/Header'
+import './App.scss';
+import { Header } from './Components/Header/Header';
 
 function App() {
-
   return (
     <>
-      <section>
+      <header>
         <Header />
-        </section>
-        
+      </header>
+      <main className="_container main"></main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
