@@ -1,0 +1,49 @@
+.trade-card {
+  background-color: #6a54ff;
+  background-image: url('./trans-logo-icon.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  border-radius: 3px;
+  clip-path: polygon(0 0, 85% 0, 100% 26%, 100% 100%, 0 100%);
+  color: #c4c2c2;
+  width: 300px;
+  overflow: hidden;
+  padding: 16px;
+
+  &__header {
+    margin-bottom: 48px;
+    &--title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    &--subtitle {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__content {
+    margin-bottom: 9px;
+    &--profit {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &--percent {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 36px;
+      color: #35ff9e;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

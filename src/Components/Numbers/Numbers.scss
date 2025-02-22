@@ -1,3 +1,49 @@
 .numbers {
   background: #fff;
+  padding-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 48px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6e6e6e;
+    margin-bottom: 40px;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+
+    &__title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #000;
+      text-transform: uppercase;
+    }
+
+    &__digits {
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 38px;
+      color: #6a54ff;
+    }
+  }
 }

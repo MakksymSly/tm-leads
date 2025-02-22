@@ -2,7 +2,7 @@ import { useMediaQuery } from 'react-responsive';
 import './Header.scss';
 import { navigationLinks } from '../../utils/constants/navigation';
 import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 export const Header = () => {
   const isDesktop = useMediaQuery({ query: '(min-width: 1199px)' });
 
@@ -11,6 +11,17 @@ export const Header = () => {
   const handleMenuToggle = () => {
     setIsBurgerOpen(!isBurgerOpen);
   };
+  useEffect(() => {
+    if (isBurgerOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+
+    return () => {
+      document.body.classList.remove('no-scroll'); // Чистим при размонтировании
+    };
+  }, [isBurgerOpen]);
   return (
     <>
       <header className="header">

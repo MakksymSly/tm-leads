@@ -1,7 +1,7 @@
 import './Home.scss';
 export const Home = () => {
   return (
-    <section className="home">
+    <section className="home _container">
       <div className="pair">
         <article className="pair__block">
           <h3 className="pair__title">ETH/USDT</h3>
