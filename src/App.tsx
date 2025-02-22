@@ -1,5 +1,7 @@
 import './App.scss';
 import { Header } from './Components/Header/Header';
+import { Home } from './Components/Home/Home';
+import { Numbers } from './Components/Numbers/Numbers';
 
 function App() {
   return (
@@ -7,7 +9,10 @@ function App() {
       <header>
         <Header />
       </header>
-      <main className="_container main"></main>
+      <main className="_container main">
+        <Home />
+        <Numbers />
+      </main>
     </>
   );
 }
